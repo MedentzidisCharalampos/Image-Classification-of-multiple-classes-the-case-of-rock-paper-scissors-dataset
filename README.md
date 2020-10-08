@@ -35,7 +35,15 @@ The architecture of the model:
 10. A Dropout Layer with 0.5 rate
 11. A Dense Layer with 512-units and Relu activation function
 12. A Dense Layer with 3-units and Softmax activation function
-The results:
+
+The model is compiled with categorical crossentropy as lost function and RMSProp as optimizer.
+The model is trained for 25 epochs.
+
+The outcome:
+
+1. The accuracy is 98.10 % and the validation accuracy is 95.43 %. 
+2. The training is improving and trending towards one.
+3. The validation zig-zag a bit, but it is always between 0.9 and 1 after the first few epochs.
 
 
 
