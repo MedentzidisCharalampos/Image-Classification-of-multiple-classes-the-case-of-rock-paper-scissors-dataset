@@ -22,14 +22,19 @@ The validation set:
 1. The dimesions rescaled (reduced) to 150 x 150
 2. The batch size is: 126
 
-
-
-
-
-
-
-
 The architecture of the model:
+1. A Convolutional Layer with 64 filters, 3 x 3 kernel size, Relu activation function and (150, 150, 3) as input size
+2. A Pooling Layer with 2 x 2 window and Max Pool
+3. A Convolutional Layer with 64 filters, 3 x 3 kernel size, Relu activation function
+4. A Pooling Layer with 2 x 2 window and Max Pool
+5. A Convolutional Layer with 128 filters, 3 x 3 kernel size, Relu activation function
+6. A Pooling Layer with 2 x 2 window and Max Pool
+7. A Convolutional Layer with 128 filters, 3 x 3 kernel size, Relu activation function
+8. A Pooling Layer with 2 x 2 window and Max Pool
+9. A Flatten Layer tha squash the the output of the previous layer into a 1D dimension
+10. A Dropout Layer with 0.5 rate
+11. A Dense Layer with 512-units and Relu activation function
+12. A Dense Layer with 3-units and Softmax activation function
 The results:
 
 
